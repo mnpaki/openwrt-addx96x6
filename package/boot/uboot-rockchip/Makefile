@@ -189,6 +189,13 @@ define U-Boot/rock-3c-rk3566
     radxa_rock-3c
 endef
 
+define U-Boot/amlogic-x96-x6-rk3566
+  $(U-Boot/rk3566/Default)
+  NAME:=X96 X6
+  BUILD_DEVICES:= \
+    amlogic_x96-x6
+endef
+
 # RK3568 boards
 
 define U-Boot/rk3568/Default
@@ -316,6 +323,7 @@ UBOOT_TARGETS := \
   radxa-cm3-io-rk3566 \
   radxa-zero-3-rk3566 \
   rock-3c-rk3566 \
+  amlogic-x96-x6-rk3566 \
   bpi-r2-pro-rk3568 \
   nanopi-r5c-rk3568 \
   nanopi-r5s-rk3568 \
